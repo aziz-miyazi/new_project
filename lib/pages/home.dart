@@ -176,7 +176,11 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    SvgPicture.asset(diets[index].iconpath),
+                    SvgPicture.asset(
+                      diets[index].iconpath,
+                      height: 70,
+                      width: 70,
+                    ),
                     Column(
                       children: [
                         Text(
